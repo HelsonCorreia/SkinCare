@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidados com a Pele - Guia Completo para Angola</title>
+    <style>
+        .vls{
+          display: block;
+          margin: 0 auto;
+          padding-top: -40px;
+          padding-bottom: 20px;
+          width: 70vw;
+          height: 100%;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23fff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23fff" stop-opacity="0"/></radialGradient></defs><circle cx="20" cy="20" r="2" fill="url(%23g)"/><circle cx="80" cy="30" r="1.5" fill="url(%23g)"/><circle cx="40" cy="70" r="1" fill="url(%23g)"/><circle cx="90" cy="80" r="2.5" fill="url(%23g)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-20px) translateX(10px); }
+            100% { transform: translateY(0px) translateX(0px); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #8B4513;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            line-height: 1.2;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.5rem;
+            color: #A0522D;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .hero-text .description {
+            font-size: 1.2rem;
+            color: #8B4513;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .product-image {
+            text-align: center;
+            position: relative;
+        }
+
+        .product-cover {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+            transition: transform 0.3s ease;
+        }
+
+        .product-cover:hover {
+            transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.05);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+        }
+
+        .benefits {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #8B4513;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+            display: block;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.5rem;
+            color: #8B4513;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .testimonials {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 100px 0;
+            color: white;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .price-section {
+            background: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .price-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-card::before {
+            content: 'OFERTA ESPECIAL';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: #FF6B6B;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .old-price {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .new-price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #FFE135;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .price-features li {
+            padding: 10px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .price-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .guarantee {
+            background: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .guarantee-badge {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 30px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-text .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-cover {
+                max-width: 300px;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Cuidados com a Pele</h1>
+                    <p class="subtitle">Guia Prático para o Clima de Angola</p>
+                    <video controls preload="auto" class="vls" <source src="./VID-20250528-WA0021.mp4" type="video/mp4"></video>
+                    <p class="description">
+                        Descubra os segredos para ter uma pele saudável e radiante, mesmo enfrentando o clima tropical, poeira e exposição solar de Angola. Um guia completo com soluções práticas e econômicas.
+                    </p>
+                    <a href="https://pay.kuenha.com/45a29ccb-31cf-4aa8-b10c-8a0ff41e2ef8" class="cta-button pulse">QUERO ESTE GUIA AGORA</a>
+                </div>
+                <div class="product-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff9a9e'/%3E%3Cstop offset='100%25' style='stop-color:%23fecfef'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='600' fill='url(%23bg)' rx='15'/%3E%3Ctext x='200' y='80' text-anchor='middle' font-family='Arial, sans-serif' font-size='28' font-weight='bold' fill='%238B4513'%3ECuidados%3C/text%3E%3Ctext x='200' y='120' text-anchor='middle' font-family='Arial, sans-serif' font-size='28' font-weight='bold' fill='%238B4513'%3Ecom a Pele%3C/text%3E%3Ctext x='200' y='180' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' fill='%23A0522D'%3EGuia Prático para%3C/text%3E%3Ctext x='200' y='210' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' fill='%23A0522D'%3Eo Clima de Angola%3C/text%3E%3Ccircle cx='200' cy='320' r='80' fill='%23fff' opacity='0.3'/%3E%3Cpath d='M160 300 Q200 280 240 300 Q220 340 200 360 Q180 340 160 300' fill='%23ff6b6b' opacity='0.8'/%3E%3Ctext x='200' y='480' text-anchor='middle' font-family='Arial, sans-serif' font-size='16' fill='%238B4513'%3E✓ Rotinas Completas%3C/text%3E%3Ctext x='200' y='510' text-anchor='middle' font-family='Arial, sans-serif' font-size='16' fill='%238B4513'%3E✓ Receitas Naturais%3C/text%3E%3Ctext x='200' y='540' text-anchor='middle' font-family='Arial, sans-serif' font-size='16' fill='%238B4513'%3E✓ Soluções Econômicas%3C/text%3E%3C/svg%3E" alt="Capa do Ebook Cuidados com a Pele" class="product-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">O Que Você Vai Descobrir</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧴</div>
+                    <h3>Rotina Completa de Skincare</h3>
+                    <p>Aprenda a criar uma rotina matinal e noturna adaptada ao clima tropical de Angola, com produtos acessíveis e eficazes.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Receitas Naturais Poderosas</h3>
+                    <p>Descubra máscaras e tratamentos caseiros usando babosa, óleo de coco, argila e outros ingredientes naturais facilmente encontrados.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Cuidados com Poucos Recursos</h3>
+                    <p>Soluções práticas e econômicas para manter sua pele saudável sem gastar muito dinheiro com produtos caros.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔬</div>
+                    <h3>Teste Caseiro do Tipo de Pele</h3>
+                    <p>Método simples para identificar seu tipo de pele (oleosa, seca, mista ou normal) usando apenas papel toalha.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">☀️</div>
+                    <h3>Proteção Solar Inteligente</h3>
+                    <p>Como proteger sua pele do sol intenso de Angola e prevenir manchas e envelhecimento precoce.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Soluções para Problemas Específicos</h3>
+                    <p>Tratamentos direcionados para acne, manchas, oleosidade, ressecamento e outros problemas comuns da pele.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">O Que Estão Dizendo</h2>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Finalmente encontrei um guia que entende os desafios da nossa pele aqui em Angola. As receitas naturais funcionaram muito bem para mim!"</p>
+                <p class="testimonial-author">- Maria Santos, Luanda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="price-section">
+        <div class="container">
+            <h2 class="section-title">Invista na Saúde da Sua Pele</h2>
+            <div class="price-card">
+                <div class="old-price">De: 5.000 Kz</div>
+                <div class="new-price">2.500 Kz</div>
+                <p style="margin-bottom: 30px;">Pagamento único • Acesso imediato</p>
+                <ul class="price-features">
+                    <li>Guia completo em PDF</li>
+                    <li>Rotinas detalhadas manhã e noite</li>
+                    <li>Receitas naturais exclusivas</li>
+                    <li>Teste caseiro do tipo de pele</li>
+                    <li>Dicas para todos os orçamentos</li>
+                    <li>Cuidados por faixa etária</li>
+                    <li>Acesso para sempre</li>
+                </ul>
+                <a href="https://pay.kuenha.com/45a29ccb-31cf-4aa8-b10c-8a0ff41e2ef8" class="cta-button" style="display: block; margin-top: 30px;">COMPRAR AGORA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee-badge">
+                GARANTIA<br>7 DIAS
+            </div>
+            <h3 style="color: #333; margin-bottom: 20px;">Satisfação 100% Garantida</h3>
+            <p style="color: #666; max-width: 600px; margin: 0 auto;">Se por qualquer motivo você não ficar satisfeito com o conteúdo, devolvemos 100% do seu dinheiro em até 7 dias após a compra.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cuidados com a Pele - Angola. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px;">Transforme sua pele com conhecimento e cuidado.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animação de entrada dos elementos
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animação aos cartões de benefícios
+        document.querySelectorAll('.benefit-card').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Adicionar efeito de hover nos botões CTA
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Aqui você deve substituir pelos links reais da Kuenha
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Substitua este URL pelo link real da Kuenha
+                window.open('https://pay.kuenha.com/45a29ccb-31cf-4aa8-b10c-8a0ff41e2ef8', '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
